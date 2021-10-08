@@ -1,0 +1,29 @@
+body {
+    background-color: #eeeeee;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 125px 125px;
+}
+
+#date {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#todo-list-table {
+    
+}
