@@ -2,17 +2,21 @@ todoListTable = document.querySelector("#todo-list-table")
 
 function newItemToDo() {
     newEntryText = document.querySelector("#new-item").value;
-    if (todoListTable.children.length == 0) {
-        count = 1;
+    if (newEntryText != "") {
+        if (todoListTable.children.length == 0) {
+            count = 1;
+        } else {
+            count = todoListTable.children.length + 1;
+        }
+        newRow = document.createElement("tr");
+        newEntry = document.createElement("td");
+        newEntry.innerText = count + ". " + newEntryText;
+        newEntryText = "";
+        newRow.append(newEntry);
+        todoListTable.append(newRow);
     } else {
-        count = todoListTable.children.length + 1;
+        alert("You need to enter some data!")
     }
-    newRow = document.createElement("tr");
-    newEntry = document.createElement("td");
-    newEntry.innerText = count + ". " + newEntryText;
-    newEntryText = "";
-    newRow.append(newEntry);
-    todoListTable.append(newRow);
 }
 
 function clearTable() {
