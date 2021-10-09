@@ -26,8 +26,9 @@ h1, h2 {
 }
 
 ol {
+    font-size:large;
     display:grid;
-    width: 250px;
+    width: 500px;
     padding: 0;
 }
 
