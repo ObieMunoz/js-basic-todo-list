@@ -40,3 +40,18 @@ li {
 li:nth-child(2n) {
     background-color: #222831;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #393e46;
+    width: 100vw;
+    border-top: 1px solid;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #eeeeee;
+}
