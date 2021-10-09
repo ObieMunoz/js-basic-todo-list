@@ -1,5 +1,6 @@
 body {
-    background-color: #eeeeee;
+    background-color: #000;
+    color: #eeeeee;
 }
 
 .container {
@@ -24,6 +25,18 @@ h1 {
     font-size: 1.5em;
 }
 
-#todo-list-table {
-    
+ol {
+    display:grid;
+    width: 250px;
+    padding: 0;
+}
+
+li {
+    list-style-position: inside;
+    color: #00adb5;
+    background-color: #393e46;
+}
+
+li:nth-child(2n) {
+    background-color: #222831;
 }
