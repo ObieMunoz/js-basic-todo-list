@@ -22,6 +22,7 @@ function newItemToDo() {
         alert("You need to enter some data!")
     }
     document.querySelector("#new-item").value = "";
+    document.querySelector("#new-item").focus();
 }
 
 function handleDelete(event) {
@@ -36,3 +37,9 @@ function clearTable() {
 
 document.querySelector("#submit").addEventListener("click", newItemToDo);
 document.querySelector("#clear").addEventListener("click", clearTable);
+document.querySelector("#new-item").addEventListener("keyup", function(event) {
+    if (event.code === "Enter") {
+        event.preventDefault();
+        newItemToDo();
+    }
+})
